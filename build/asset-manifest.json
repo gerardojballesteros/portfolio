@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d4c24e5b.css",
+    "main.js": "/static/js/main.fa50a5cd.js",
+    "static/media/cocogoose-light.ttf": "/static/media/cocogoose-light.6440e32616f290a797e9.ttf",
+    "static/media/cocogoose-bold.ttf": "/static/media/cocogoose-bold.fc4c5187ea318bde306b.ttf",
+    "static/media/cocogoose-regular.ttf": "/static/media/cocogoose-regular.f77876cfc3790e5308f4.ttf",
+    "static/media/cocogoose-trial.otf": "/static/media/cocogoose-trial.36e499573a696e95c489.otf",
+    "index.html": "/index.html",
+    "main.d4c24e5b.css.map": "/static/css/main.d4c24e5b.css.map",
+    "main.fa50a5cd.js.map": "/static/js/main.fa50a5cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4c24e5b.css",
+    "static/js/main.fa50a5cd.js"
+  ]
+}

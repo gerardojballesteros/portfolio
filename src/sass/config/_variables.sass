@@ -1,0 +1,182 @@
+// variables 
+
+$CCB: 'Cocogoose-Bold'
+$CCR: 'Cocogoose-Regular'
+$CCL: 'Cocogoose-Light'
+$CCT: 'Cocogoose-Trial'
+$SRCP: 'Source Sans Pro'
+
+    
+$lg: '(min-width: 1501px)'
+$mdl: 'only screen and (min-width: 1169px) and (max-width: 1500px)'
+$md: 'only screen and (min-width: 735px) and (max-width: 1168px)'
+$sm: '(max-width: 734px)'
+
+
+// color
+$wc: white
+$bc: black
+
+// Font size
+
+
+h1
+    font-size: 10rem
+    @media #{$lg}
+        font-size: 13rem
+    @media #{$sm}
+        font-size: 5rem
+
+h3
+    font-size: 3rem
+    @media #{$lg}
+        font-size: 4rem
+    @media #{$sm}
+        font-size: 1.5rem
+
+p
+    font-size: 2.4rem
+    @media #{$lg}
+        font-size: 3rem
+    @media #{$sm}
+        font-size: 1.2rem
+
+
+
+
+// Mixins
+
+@mixin btn-lg($bg-color: white, $color-fbtn: black, $br-color: white)
+    background: $bg-color
+    color: $color-fbtn
+    font-weight: 400
+    text-decoration: none
+    padding: 10px 35px
+    border: 0px solid $br-color
+    border-radius: 5px
+    font-size: 13px
+    transition: .3s ease
+    &:hover
+        background: black
+        color: white
+        
+
+@mixin btn-md()
+    padding: 8px 25px
+    font-size: 10px
+    font-weight: 400
+    &:hover
+        background: black
+        color: white
+        
+
+@mixin btn-sm()
+    padding: 9px 27px
+    font-size: 11px
+    font-weight: 400
+    &:hover
+        background: black
+        color: white
+        
+
+
+@mixin btn-lg-b($bg-color-b: black, $color-fbtn-b: white, $br-color-b: black)
+    background: $bg-color-b
+    color: $color-fbtn-b
+    font-weight: 400
+    text-decoration: none
+    padding: 10px 35px
+    border: 1px solid $br-color-b
+    border-radius: 5px
+    font-size: 13px
+    transition: .3s ease
+    &:hover
+        background: white
+        color: black
+        border: 1px solid black
+
+@mixin btn-md-b()
+    padding: 8px 25px
+    font-size: 10px
+    font-weight: 400
+    &:hover
+        background: white
+        color: black
+        border: 1px solid black
+
+@mixin btn-sm-b()
+    padding: 9px 27px
+    font-size: 11px
+    font-weight: 400
+    &:hover
+        background: white
+        color: black
+        border: 1px solid black
+
+    
+@mixin btn-lg-t($bg-color-t: white, $color-fbtn-t: white, $br-color-t: white)
+    background: $bg-color-t
+    color: $color-fbtn-t
+    font-weight: 400
+    text-decoration: none
+    padding: 10px 35px
+    border: 1px solid $br-color-t
+    border-radius: 5px
+    font-size: 13px
+    transition: .3s ease
+    &:hover
+        background: white!important
+        color: black!important
+        border: 1px solid white
+
+@mixin btn-md-t()
+    padding: 8px 25px
+    font-size: 10px
+    font-weight: 400
+    &:hover
+        background: black
+        color: white
+        border: 1px solid black
+
+@mixin btn-sm-t()
+    padding: 9px 27px
+    font-size: 11px
+    font-weight: 400
+    &:hover
+        background: black
+        color: white
+        border: 1px solid black
+
+
+@mixin btn-lg-t-g($bg-color-t-g: #766565, $color-fbtn-t-g: #766565, $br-color-t-g: #766565)
+    background: $bg-color-t-g
+    color: $color-fbtn-t-g
+    font-weight: 400
+    text-decoration: none
+    padding: 10px 35px
+    border: 1px solid $br-color-t-g
+    border-radius: 5px
+    font-size: 13px
+    transition: .3s ease
+    &:hover
+        background: #766565!important
+        color: white!important
+        border: 1px solid white
+
+@mixin btn-md-t-g()
+    padding: 8px 25px
+    font-size: 10px
+    font-weight: 400
+    &:hover
+        background: #766565
+        color: white
+        border: 1px solid black
+
+@mixin btn-sm-t-g()
+    padding: 9px 27px
+    font-size: 11px
+    font-weight: 400
+    &:hover
+        background: #766565
+        color: white
+        border: 1px solid black

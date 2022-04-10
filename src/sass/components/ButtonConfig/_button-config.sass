@@ -1,0 +1,50 @@
+@import '../../config/_variables'
+
+.btn-white
+    position: relative
+    margin-top: 10%
+    a
+        @include btn-lg()
+        @media #{$md}
+            @include btn-md()
+        @media #{$sm}
+            @include btn-sm()
+            
+            
+.btn-black
+    position: relative
+    margin-top: 10%
+    a
+        @include btn-lg-b()
+        @media #{$md}
+            @include btn-md-b()
+        @media #{$sm}
+            @include btn-sm-b()
+
+.btn-transparent
+    position: relative
+    margin-top: 10%
+    a
+        @include btn-lg-t()
+        background: transparent!important
+        @media #{$md}
+            @include btn-md-t()
+        @media #{$sm}
+            @include btn-sm-t()
+
+    
+.btn-transparent-gray
+    position: relative
+    margin-top: 10%
+    a
+        @include btn-lg-t-g()
+        background: transparent!important
+        @media #{$md}
+            @include btn-md-t-g()
+        @media #{$sm}
+            @include btn-sm-t-g()
+
+.btn-no_hover
+    display: none
+    @media #{$sm}
+        display: block

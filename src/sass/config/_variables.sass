@@ -4,7 +4,7 @@ $CCB: 'Cocogoose-Bold'
 $CCR: 'Cocogoose-Regular'
 $CCL: 'Cocogoose-Light'
 $CCT: 'Cocogoose-Trial'
-$SRCP: 'Source Sans Pro'
+$SRCP: 'Red Hat Display'
 
     
 $lg: '(min-width: 1501px)'
@@ -17,29 +17,49 @@ $sm: '(max-width: 734px)'
 $wc: white
 $bc: black
 
+
+
 // Font size
 
 
 h1
     font-size: 10rem
-    @media #{$lg}
-        font-size: 13rem
+    letter-spacing: -.2vw
+    @media #{$md}
+        font-size: 8rem
+        letter-spacing: -.2vw
     @media #{$sm}
         font-size: 5rem
 
+h2
+    font-size: 7rem
+    letter-spacing: -.2vw
+    @media #{$md}
+        font-size: 5rem
+        letter-spacing: -.2vw
+    // @media #{$lg}
+    //     font-size: 9rem
+    //     letter-spacing: -.3vw
+    @media #{$sm}
+        font-size: 3rem
+
 h3
     font-size: 3rem
-    @media #{$lg}
-        font-size: 4rem
+    // @media #{$lg}
+    //     font-size: 4rem
     @media #{$sm}
         font-size: 1.5rem
 
 p
-    font-size: 2.4rem
-    @media #{$lg}
-        font-size: 3rem
+    font-size: 2.5rem
+    letter-spacing: -.02vw
+    @media #{$md}
+        font-size: 2rem
+        letter-spacing: -.02vw
     @media #{$sm}
-        font-size: 1.2rem
+        font-size: 1.7rem
+
+
 
 
 

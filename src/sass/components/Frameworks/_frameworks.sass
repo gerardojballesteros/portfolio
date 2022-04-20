@@ -1,0 +1,80 @@
+@import '../../config/_variables'
+
+.fw
+    position: relative
+    width: 100%
+    height: auto
+    margin-top: -2500px
+    @media #{$sm}
+        margin-top: 0px
+    .fw__content
+        position: relative
+        width: 100%
+        height: calc(85% - 53px)
+        background: black
+        opacity: 0
+        padding: 100px 0px
+        @media #{$sm}
+            padding: 90px 0px
+            opacity: 1
+            height: auto
+        .title
+            width: 100%
+            text-align: center
+            opacity: 0
+            transform: scale(1.4)
+            position: relative
+            top: 100px
+            @media #{$sm}
+                top: 0px
+                opacity: 1
+                transform: scale(1)
+            h1
+                background: linear-gradient(89.97deg, #FFDADA 0.02%, #8A8A8A 99.98%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                background-clip: text
+                text-fill-color: transparent
+                line-height: 90px
+                margin-top: 180px
+                @media #{$sm}
+                    margin-top: 0px
+                    line-height: 100%
+        .img-react
+            position: relative
+            width: 100%
+            height: auto
+            display: flex
+            justify-content: center
+            opacity: 0
+            margin-top: 300px
+            @media #{$sm}
+                margin-top: 30px
+                opacity: 1
+            img
+                width: 100%
+                max-width: 500px
+                @media #{$sm}
+                    max-width: 300px
+        .subtitle
+            position: relative
+            width: 100%
+            height: auto
+            margin-top: 100px
+            padding-bottom: 100px
+            @media #{$sm}
+                padding: 30px 20px
+                margin-top: 0px
+                padding-bottom: 0px
+            p
+                text-align: center
+                color: #C6C5C5
+                transition: .8s ease
+                a
+                    color: #5A9CFF
+                    cursor: pointer
+                    transition: .8s ease
+                    &:hover
+                        font-style: italic
+
+

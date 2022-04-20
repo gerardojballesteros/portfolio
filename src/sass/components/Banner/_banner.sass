@@ -1,7 +1,7 @@
 @import '../../config/_variables'
 
 .banner
-    position: fixed
+    position: relative
     width: 100%
     height: auto
     .banner__content
@@ -49,7 +49,7 @@
                 @media #{$lg}
                     top: 35px
                 @media #{$sm}
-                    top: 16px
+                    top: 10px
             h1
                 background: linear-gradient(180deg, #91BCFC 0%, #FFFFFF 100%)
                 -webkit-background-clip: text
@@ -57,12 +57,14 @@
                 background-clip: text
                 text-fill-color: transparent
                 letter-spacing: -.2vw
+                font-weight: 700
                 @media #{$sm}
                     letter-spacing: -.6vw
             p
                 position: relative
                 top: -20px
                 font-weight: 400
+                text-align: center
                 @media #{$lg}
                     top: -30px
                 @media #{$sm}
@@ -87,3 +89,4 @@
                             max-width: 70px
                         @media #{$sm}
                             max-width: 40px
+

@@ -3,9 +3,8 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const Banner = () => {
+export const Banner = () => {
     useEffect(() => {
-
         gsap.utils.toArray(".panel").forEach((panel, i) => {
             ScrollTrigger.create({
               trigger: panel,
@@ -47,7 +46,7 @@ const Banner = () => {
                 <article className="txt">
                     <h3>Welcome to my</h3>
                     <h1>Portfolio</h1>
-                    <p>Gerardo J. Ballesteros G. | <strong> UI/UX and Frontend Developer</strong></p>
+                    <p>Gerardo J. Ballesteros G. | <strong> Front-end Software Engineer.</strong></p>
                     <picture className="logos">
                         <a href="https://github.com/gerardojballesteros" target="_blank">
                             <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1649552370/portfolio/icons/zncqiznbae3orbvgm4ru.svg" alt="" />
@@ -63,4 +62,3 @@ const Banner = () => {
     )
 }
 
-export default Banner

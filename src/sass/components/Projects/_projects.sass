@@ -1,0 +1,39 @@
+@import '../../config/_variables'
+
+.projects
+    position: relative
+    width: 100%
+    height: auto
+    background: black
+    margin-top: -80px
+    @media #{$md}
+        margin-top: -150px
+    .projects__content
+        
+        .projects__content__title
+            width: 100%
+            padding-left: 10%
+            max-width: 2200px
+            margin: auto
+            @media #{$md}
+                padding: 0 50px
+            h1
+                color: white
+                background: linear-gradient(90deg, #FFFFFF 0%, #5A9CFF 70%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                background-clip: text
+                text-fill-color: transparent
+                font-size: 8rem
+                padding: 20px 0
+                @media #{$md}
+                    line-height: 70px
+                &:nth-child(2)
+                    margin-top: -60px 
+                    background: linear-gradient(90deg, #FD89FF 0%, #FFFFFF 40%)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    background-clip: text
+                    text-fill-color: transparent
+                    @media #{$md}
+                        margin-top: -20px 

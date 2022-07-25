@@ -3,28 +3,29 @@
 .fw
     position: relative
     width: 100%
-    height: auto
-    margin-top: -2500px
+    margin-top: -2300px
+    height: calc(55% - 53px)
+    background: black
+    opacity: 0
+    max-height: 1260px!important
     @media #{$sm}
         margin-top: 0px
     .fw__content
         position: relative
         width: 100%
-        height: calc(85% - 53px)
-        background: black
-        opacity: 0
         padding: 100px 0px
         @media #{$sm}
             padding: 90px 0px
             opacity: 1
             height: auto
         .title
+            position: relative
             width: 100%
             text-align: center
             opacity: 0
             transform: scale(1.4)
             position: relative
-            top: 100px
+            
             @media #{$sm}
                 top: 0px
                 opacity: 1
@@ -36,7 +37,9 @@
                 background-clip: text
                 text-fill-color: transparent
                 line-height: 90px
-                margin-top: 180px
+                margin-top: 120px
+                @media #{$md}
+                    line-height: 70px
                 @media #{$sm}
                     margin-top: 0px
                     line-height: 100%

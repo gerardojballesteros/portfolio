@@ -4,9 +4,12 @@
     position: relative
     width: 100%
     height: auto
-    background: white
+    background: transparent
     padding-top: 80px
-    padding-bottom: 200px
+    padding-bottom: 140px
+    opacity: 0
+    backdrop-filter: blur(30px)
+    weblit-backdrop-filter: blur(40px)
     @media #{$sm}
         padding-top: 0px
         padding-bottom: 0px
@@ -22,7 +25,7 @@
             position: relative
             width: 100%
             h1
-                color: #949494
+                color: #ffffff
         .text-content
             position: relative
             opacity: 0
@@ -30,6 +33,7 @@
             p
                 line-height: 40px
                 font-weight: 300
+                color: #e7e7e7
                 @media #{$sm}
                     line-height: 25px
                     margin-top: 15px

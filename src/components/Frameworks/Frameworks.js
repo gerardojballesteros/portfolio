@@ -23,21 +23,24 @@ const Frameworks = () => {
                 end: '80%',
                 scrub: true,
                 pin: true,
-                markers: true
+                toggleActions: "play reverse play reset",
+                
             }
         })
-        frameworksAll.to('.fw__content', {opacity: 1, duration: .1})
+        frameworksAll.to('.fw', {opacity: 1, duration: .1})
 
         let titleReact = gsap.timeline({
             scrollTrigger: {
                 trigger: TitleReact.current,
-                start: 'top top',
-                end: '120%',
+                start: '-200px top',
+                end: '300%',
                 scrub: true,
-                // markers: true
+
+                toggleActions: "play reverse play reset",
             }
         })
         titleReact.to(TitleReact.current, {opacity: 1, duration: 1, scale: 1, top: -150})
+        
         
 
         let imgReact = gsap.timeline({
@@ -46,7 +49,8 @@ const Frameworks = () => {
                 start: '-200px top',
                 end: '40%',
                 scrub: true,
-                // markers: true
+                toggleActions: "play reverse play reset",
+                
             }
         })
         imgReact.to(ImgReact.current, {opacity: 1, duration: 1, marginTop: '-50px'})
@@ -54,18 +58,18 @@ const Frameworks = () => {
         },
         "(max-width: 734px)": function(){
 
-            gsap.utils.toArray(".framework-parents").forEach((frameworkPanel, i) => {
-                ScrollTrigger.create({
-                  trigger: frameworkPanel,
-                  start: "350px top", 
-                  scrub: true,
-                  pin: true, 
-                  pinSpacing: false,
-                });
-              }); 
-              ScrollTrigger.create({
-              snap: false
-              });
+            // gsap.utils.toArray(".framework-parents").forEach((frameworkPanel, i) => {
+            //     ScrollTrigger.create({
+            //       trigger: frameworkPanel,
+            //       start: "350px top", 
+            //       scrub: true,
+            //       pin: true, 
+            //       pinSpacing: false,
+            //     });
+            //   }); 
+            //   ScrollTrigger.create({
+            //   snap: false
+            //   });
 
         },
 

@@ -5,8 +5,9 @@
     width: 100%
     height: auto
     background: white
+    padding-top: 120px
     @media #{$sm}
-        padding: 20px 15px
+        padding: 60px 15px 100px 15px
     .keyboard
         position: absolute
         width: 100%
@@ -15,7 +16,7 @@
         justify-content: center
         left: 0
         right: 0
-        top: 0
+        top: 90px
         z-index: 1
         @media #{$sm}
            display: none
@@ -33,7 +34,7 @@
             padding: 0px 4px
         h1
             letter-spacing: -.3vw
-            line-height: 90px
+            line-height: 70px
             background: linear-gradient(89.98deg, #000000 -34.21%, #3D4DA2 -34.2%, rgba(55, 55, 55, 0.51) 99.98%)
             -webkit-background-clip: text
             -webkit-text-fill-color: transparent
@@ -54,7 +55,7 @@
         width: 100%
         height: auto
         overflow: hidden
-        margin-top: 130px
+        margin-top: 100px
         @media #{$sm}
             margin-top: 10px
         .bg-gray
@@ -324,6 +325,8 @@
             width: 100%
             margin-top: 18vh
             text-align: center
+            @media #{$md}
+                margin-top: 8vh
             h1
                 background: rgb(119,119,119)
                 background: linear-gradient(360deg, rgba(119,119,119,1) 0%, rgba(61,61,61,1) 100%)
@@ -334,6 +337,8 @@
                 line-height: 100px
                 padding: 20px
                 letter-spacing: -.6rem
+                @media #{$md}
+                    line-height: 70px
         .keyboard-js
             position: relative
             width: 100%
@@ -344,6 +349,8 @@
             margin-top: 50px
             text-align: start
             z-index: 1
+            @media #{$md}
+                margin-top: 120px
             p
                 color: rgb(119,119,119)
                 padding: 20px 0px
@@ -373,6 +380,8 @@
             h1
                 font-size: 13rem
                 opacity: 0
+                @media #{$md}
+                    font-size: 12rem
                 &:nth-child(1)
                     position: relative
                     background: linear-gradient(270deg, rgba(206, 209, 33, 0.71) 0%, #555555 100%)
@@ -385,5 +394,9 @@
                     position: relative
                     top: -20px
                     left: 100vw
+                    @media #{$mdl}
+                        left: 140vw
+                    @media #{$md}
+                        left: 170vw
                     color: #949494
                 

@@ -14,6 +14,15 @@ const AboutMe = () => {
 
         ScrollTrigger.matchMedia({
             "(min-width: 735px)": function(){
+                let aboutall = gsap.timeline({
+                    scrollTrigger:{
+                        trigger: '.about-me',
+                        start: 'top bottom',
+                        scrub: 1,
+                        end: 'bottom bottom',
+                    },
+                })
+                aboutall.to('.about-me', {opacity: 1, duration: 1})
                 let abouTitle = gsap.timeline({
                     scrollTrigger:{
                         trigger: AboutMeTitle.current,
@@ -21,11 +30,10 @@ const AboutMe = () => {
                         end: '300px bottom',
                         scrub: 1,
                         opacity: 0,
-                        // markers: true,
                     },
                 })
-                abouTitle.from(AboutMeTitle.current, {opacity: 0, yPercent: 50, duration: 1})
-                abouTitle.to(AboutMeTitle.current, {opacity: 1, yPercent: 0, duration: 4})
+                // abouTitle.from(AboutMeTitle.current, {opacity: 0, yPercent: 50, duration: 1})
+                // abouTitle.to(AboutMeTitle.current, {opacity: 1, yPercent: 0, duration: 4})
 
                 let aboutTxt = gsap.timeline({
                     scrollTrigger:{
@@ -34,7 +42,6 @@ const AboutMe = () => {
                         end: '500px bottom',
                         scrub: 1,
                         opacity: 0,
-                        // markers: true,
                     },
                 })
                 aboutTxt.from(AboutMeText.current, {opacity: 0, yPercent: 50, duration: 1})
@@ -42,6 +49,15 @@ const AboutMe = () => {
 
             },
             "(max-width: 734px)": function(){
+                let aboutall = gsap.timeline({
+                    scrollTrigger:{
+                        trigger: '.about-me',
+                        start: 'top bottom',
+                        scrub: 1,
+                        end: 'bottom bottom',
+                    },
+                })
+                aboutall.to('.about-me', {opacity: 1, duration: 1})
                 let abouTitle = gsap.timeline({
                     scrollTrigger:{
                         trigger: AboutMeTitle.current,
@@ -49,7 +65,6 @@ const AboutMe = () => {
                         end: '300px bottom',
                         scrub: 1,
                         opacity: 0,
-                        // markers: true,
                     },
                 })
                 abouTitle.from(AboutMeTitle.current, {opacity: 0, yPercent: 30, duration: 1})
@@ -62,7 +77,6 @@ const AboutMe = () => {
                         end: '300px bottom',
                         scrub: 1,
                         opacity: 0,
-                        // markers: true,
                     },
                 })
                 aboutTxt.from(AboutMeText.current, {opacity: 0, yPercent: 30, duration: 1})

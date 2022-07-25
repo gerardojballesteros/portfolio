@@ -17,7 +17,6 @@ const Skills = () => {
     const jsKb = useRef();
 
     useEffect(() => {
-
         ScrollTrigger.matchMedia({
             "(min-width: 735px)": function(){
 
@@ -27,18 +26,18 @@ const Skills = () => {
                         start: 'top top',
                         end: '180%',
                         pin: true,
-                        
-                        // markers: true
+                        toggleActions: "play reverse play reset",
                     }
                 })
+                
 
                 let jsTitle = gsap.timeline({
                     scrollTrigger:{
                         trigger: javascriptTitle.current,
                         start: '-300px top',
                         end: '200px',
-                        // markers: true,
-                        scrub: true
+                        scrub: true,
+                        toggleActions: "play reverse play reset",
                     }, 
                 })
                 jsTitle.to(javascriptTitle.current, {opacity: 0, yPercent: -200, duration: 1, overflow: 'invisible'})
@@ -48,9 +47,8 @@ const Skills = () => {
                         trigger: jsKb.current,
                         start: '-300px top',
                         end: '400px',
-                        // markers: true,
                         scrub: true,
-                        
+                        toggleActions: "play reverse play reset",
                     }, duration: 1
                 })
                 jsKeyboard.to(jsKb.current, {scale: 1.6, yPercent: -84, duration: 16})
@@ -63,10 +61,9 @@ const Skills = () => {
                     scrollTrigger:{
                         trigger: jsKb.current,
                         start: '380px top',
-                        end: '700px',
-                        // markers: true,
+                        end: '1000px',
                         scrub: 1,
-                        
+                        toggleActions: "play reverse play reset",
                     }, duration: 1
                 })
                 txtRight.to('.txt-right', {opacity: 1, x: -2200, duration: 50})
@@ -76,28 +73,22 @@ const Skills = () => {
                     scrollTrigger:{
                         trigger: jsKb.current,
                         start: '380px top',
-                        end: '700px',
-                        // markers: true,
+                        end: '1000px',
                         scrub: 1,
-                        
+                        toggleActions: "play reverse play reset",
                     }, duration: 1
                 })
                 txtLeft.to('.txt-left', {opacity: 1, x: 1300, duration: 50})
                 
-                
-                
-
-
                 let SkillsKeyboard = gsap.timeline({
                     scrollTrigger:{
                         trigger: skillsKeyboard.current,
                         start: 'top bottom',
                         end: '500px bottom',
-                        
+                        toggleActions: "play reverse play reset",
                         scrub: true,
                         opacity: 0,
                         duration: 3
-                        // markers: true,
                     },
                 })
                 SkillsKeyboard.from(skillsKeyboard.current, {opacity: 0, yPercent: 30, duration: 1})
@@ -109,11 +100,10 @@ const Skills = () => {
                         trigger: skillsTitleTop.current,
                         start: '-200px bottom',
                         end: '500vw bottom',
-                        
+                        toggleActions: "play reverse play reset",
                         scrub: true,
                         opacity: 0,
                         duration: 3
-                        // markers: true,
                     },
                 })
                 SkillsTitleTop.from(skillsTitleTop.current, {opacity: 0, yPercent: 30, duration: 1})
@@ -124,11 +114,10 @@ const Skills = () => {
                         trigger: skillsOne.current,
                         start: 'top bottom',
                         end: '500px bottom',
-                        
+                        toggleActions: "play reverse play reset",
                         scrub: true,
                         opacity: 0,
                         duration: 3
-                        // markers: true,
                     },
                 })
                 SkillsOne.from(skillsOne.current, {opacity: 0, yPercent: 30})
@@ -139,11 +128,10 @@ const Skills = () => {
                         trigger: skillsTwo.current,
                         start: 'top bottom',
                         end: '600px bottom',
-                        
+                        toggleActions: "play reverse play reset",
                         scrub: true,
                         opacity: 0,
                         duration: 3
-                        // markers: true,
                     },
                 })
                 SkillsTwo.from(skillsTwo.current, {opacity: 0, yPercent: 30, duration: 1})
@@ -154,11 +142,10 @@ const Skills = () => {
                         trigger: skillsThree.current,
                         start: '-100px bottom',
                         end: '500px bottom',
-                        
+                        toggleActions: "play reverse play reset",
                         scrub: true,
                         opacity: 0,
                         duration: 3
-                        // markers: true,
                     },
                 })
                 SkillsThree.from(skillsThree.current, {opacity: 0, yPercent: 30, duration: 1})
@@ -169,11 +156,10 @@ const Skills = () => {
                         trigger: skillsFour.current,
                         start: '-100px bottom',
                         end: '650px bottom',
-                        
+                        toggleActions: "play reverse play reset",
                         scrub: true,
                         opacity: 0,
                         duration: 3
-                        // markers: true,
                     },
                 })
                 SkillsFour.from(skillsFour.current, {opacity: 0, yPercent: 30, duration: 1})
@@ -189,7 +175,6 @@ const Skills = () => {
                         scrub: 2,
                         opacity: 0,
                         duration: 3,
-                        // markers: true,
                     },
                 })
                 SkillsTitleTop.from(skillsTitleTop.current, {opacity: 0, yPercent: 10, duration: 1})
@@ -206,7 +191,6 @@ const Skills = () => {
                         scrub: true,
                         opacity: 0,
                         duration: 3
-                        // markers: true,
                     },
                 })
                 SkillsOne.from(skillsOne.current, {opacity: 0, yPercent: 10})
@@ -222,7 +206,6 @@ const Skills = () => {
                         scrub: true,
                         opacity: 0,
                         duration: 3
-                        // markers: true,
                     },
                 })
                 SkillsTwo.from(skillsTwo.current, {opacity: 0, yPercent: 10, duration: 1})
@@ -237,7 +220,6 @@ const Skills = () => {
                         scrub: true,
                         opacity: 0,
                         duration: 3
-                        // markers: true,
                     },
                 })
                 SkillsThree.from(skillsThree.current, {opacity: 0, yPercent: 10, duration: 1})
@@ -252,7 +234,6 @@ const Skills = () => {
                         scrub: true,
                         opacity: 0,
                         duration: 3
-                        // markers: true,
                     },
                 })
                 SkillsFour.from(skillsFour.current, {opacity: 0, yPercent: 10, duration: 1})
@@ -267,7 +248,6 @@ const Skills = () => {
                         scrub: true,
                         opacity: 0,
                         duration: 3,
-                        // markers: true,
                     },
                 })
                 SkillsFive.from(skillsFive.current, {opacity: 0, yPercent: 0, duration: 1})

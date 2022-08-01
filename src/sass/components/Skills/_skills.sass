@@ -34,7 +34,7 @@
             padding: 0px 4px
         h1
             letter-spacing: -.3vw
-            line-height: 70px
+            line-height: 80px
             background: linear-gradient(89.98deg, #000000 -34.21%, #3D4DA2 -34.2%, rgba(55, 55, 55, 0.51) 99.98%)
             -webkit-background-clip: text
             -webkit-text-fill-color: transparent
@@ -212,7 +212,7 @@
                     grid-column: 2/4
                     grid-row: 2
                     @media #{$sm}
-                        height: 190px
+                        height: 250px
                     ul
                         .text-title
                             h2
@@ -224,9 +224,14 @@
                             position: relative
                             top: 8px
                             @media #{$sm}
+                                flex-direction: column
                                 top: 0px
                                 margin-top: 0px
                                 display: flex
+                                align-items: flex-start
+                                p
+                                    strong
+                                        font-weight: 500
                             picture
                                 position: relative
                                 height: 30px
@@ -234,23 +239,24 @@
                                 align-items: center
                                 margin-left: 10px
                                 @media #{$sm}
-                                    margin-top: 3px
-                                    margin-left: 16px
+                                    margin-top: 10px
+                                 
                                 img
                                     width: 100%
                                     max-width: 45px
                                     margin: 0px -4px
                                     @media #{$sm}
-                                        margin: 0px -6px
+                                      
                         .text-rating
                             @media #{$sm}
-                                margin-top: -40px
+                                margin-top: 30px
                 &:nth-child(5)
                     height: 150px
                     display: none
                     padding: 20px 20px
                     @media #{$sm}
                         display: block
+                        height: 180px
                     ul
                         .text-title
                             h2
@@ -355,6 +361,9 @@
                 color: rgb(119,119,119)
                 padding: 20px 0px
                 opacity: 0
+            img
+                width: 100%
+                max-width: 700px
         .text-js
             position: absolute
             width: 3000px
@@ -365,8 +374,17 @@
             align-items: center
             top: -135px
             opacity: 0
+            
             h1
+                text-align: center
                 color: #949494
+                p
+                    position: relative
+                    top: -15px
+                    font-weight: 400
+                    strong
+                        color: #6b7a77
+                        font-weight: 600
         .text-left-right
             position: absolute
             width: 3000px
@@ -374,7 +392,7 @@
             display: flex
             flex-direction: column
             justify-content: center
-            top: 0vh
+            top: 50px
             overflow: hidden
             margin: auto
             h1

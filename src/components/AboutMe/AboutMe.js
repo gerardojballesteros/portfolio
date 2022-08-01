@@ -1,11 +1,9 @@
-import React, {useRef, useEffect} from 'react'
+import { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-
-
-const AboutMe = () => {
+export const AboutMe = () => {
 
     const AboutMeTitle = useRef();
     const AboutMeText = useRef();
@@ -32,9 +30,7 @@ const AboutMe = () => {
                         opacity: 0,
                     },
                 })
-                // abouTitle.from(AboutMeTitle.current, {opacity: 0, yPercent: 50, duration: 1})
-                // abouTitle.to(AboutMeTitle.current, {opacity: 1, yPercent: 0, duration: 4})
-
+                
                 let aboutTxt = gsap.timeline({
                     scrollTrigger:{
                         trigger: AboutMeText.current,
@@ -86,7 +82,6 @@ const AboutMe = () => {
 
         })
         
-        
     }, []);
 
     return (
@@ -108,5 +103,3 @@ const AboutMe = () => {
         </section>
     )
 }
-
-export default AboutMe

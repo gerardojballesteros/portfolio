@@ -1,10 +1,10 @@
-import React, {useRef, useEffect} from 'react'
+import { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 
-const Frameworks = () => {
+export const Frameworks = () => {
 
     const  FrameworksAll = useRef();
     const  TitleReact = useRef();
@@ -96,4 +96,4 @@ const Frameworks = () => {
     )
 }
 
-export default Frameworks
+

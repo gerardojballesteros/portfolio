@@ -44,8 +44,8 @@ export const Banner = () => {
                     <img src="https://res.cloudinary.com/underverse-clothing/image/upload/dpr_2.0,f_auto,q_auto/v1649545872/portfolio/yo_drz6mm.png" alt="" />
                 </picture>
                 <article className="txt">
-                    <h3>Welcome to my</h3>
-                    <h1>Portfolio</h1>
+                    {/* <h3>Welcome to my</h3> */}
+                    <h1>Welcome to my Portfolio</h1>
                     <p>Gerardo J. Ballesteros G. | <strong> Front-end Software Engineer.</strong></p>
                     <picture className="logos">
                         <a href="https://github.com/gerardojballesteros" target="_blank">
@@ -54,7 +54,9 @@ export const Banner = () => {
                         <a href="https://www.linkedin.com/in/gerardojballesteros" target="_blank">
                             <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1649552370/portfolio/icons/odcinbwj9ewhseqimeqc.svg" alt="" />
                         </a>
+                        <div className='icon-scroll'></div>
                     </picture>
+                    
                 </article>
             </div>
         </section>

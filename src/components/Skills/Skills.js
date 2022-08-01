@@ -1,9 +1,9 @@
-import React, {useRef, useEffect} from 'react'
+import { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const Skills = () => {
+export const Skills = () => {
 
     const skillsOne = useRef();
     const skillsTwo = useRef();
@@ -340,7 +340,7 @@ const Skills = () => {
                                     </h2>
                                 </div>
                                 <div className="text-description">
-                                    <p>Preprocessor</p>
+                                    <p>CSS in JS with <strong>Styled-Components</strong> or Preprocessor</p>
                                     <picture>
                                         <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650078965/portfolio/icons/sasslogo.svg" alt="sass"/>
                                     </picture>
@@ -358,6 +358,7 @@ const Skills = () => {
                                 <div className="text-title">
                                     <h2>
                                         Javascript();
+                                        <p>with <strong>TypeScript</strong></p>
                                     </h2>
                                 </div>
                         
@@ -380,10 +381,10 @@ const Skills = () => {
                     </article>
                     <picture className="keyboard-js" ref={jsKb}>
                         <p id="guess">Guess which one?</p>
-                        <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650092095/portfolio/icons/accessories_keyboard__e1n39q3h7ngy_large.png" alt="" />
+                        <img src="https://www.apple.com/v/imac-24/e/images/overview/accessories_keyboard__e1n39q3h7ngy_large_2x.png" alt="" />
                     </picture>
                     <article className="text-js">
-                        <h1>JavaScript();</h1>
+                        <h1>JavaScript(); <br /> <p>with <strong>TypeScript</strong></p> </h1>
                     </article>
                 </div>
             </section>
@@ -391,4 +392,4 @@ const Skills = () => {
     )
 }
 
-export default Skills
+

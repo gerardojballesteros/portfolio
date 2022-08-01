@@ -9,12 +9,13 @@
     @media #{$md}
         margin-top: -150px
     .projects__content
-        
         .projects__content__title
+            position: relative
             width: 100%
             padding-left: 10%
             max-width: 2200px
             margin: auto
+            z-index: 2
             @media #{$md}
                 padding: 0 50px
             h1
@@ -24,12 +25,12 @@
                 -webkit-text-fill-color: transparent
                 background-clip: text
                 text-fill-color: transparent
-                font-size: 8rem
                 padding: 20px 0
+                line-height: 70px
                 @media #{$md}
-                    line-height: 70px
+                    line-height: 55px
                 &:nth-child(2)
-                    margin-top: -60px 
+                    margin-top: -10px 
                     background: linear-gradient(90deg, #FD89FF 0%, #FFFFFF 40%)
                     -webkit-background-clip: text
                     -webkit-text-fill-color: transparent
@@ -37,3 +38,183 @@
                     text-fill-color: transparent
                     @media #{$md}
                         margin-top: -20px 
+        .marsmellow
+            position: relative
+            width: 100%
+            height: auto
+            margin-top: 140px
+            z-index: 2
+            .marsmellow__content
+                position: relative
+                width: 100%
+                height: 83vh
+                display: flex
+                justify-content: center
+                flex-direction: column
+                video
+                    width: 70%
+                    height: 75vh
+                    object-fit: cover
+                    border: 3px solid #333
+                    margin: auto
+                    @media #{$mdl}
+                        height: 85vh
+                .playstop
+                    position: abosulte
+                    width: 100%
+                    height: auto
+                    bottom: 0
+                    padding: 30px
+                    z-index: 11
+                    .circle
+                        width: 45px
+                        height: 45px
+                        border-radius: 50%
+                        border: 2px solid white
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        cursor: pointer
+                        overflow: hidden
+                        svg
+                            font-size: 20px
+                            color: white
+                            padding: 20px
+                .bg
+                    position: absolute
+                    width: 100%
+                    height: 100vh
+                    left: 0
+                    background: rgb(0,0,0)
+                    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5746892507002801) 56%, rgba(255,255,255,0) 100%)
+                    opacity: 0
+                .text
+                    position: absolute
+                    width: 100%
+                    height: 100vh
+                    display: flex
+                    align-items: center
+                    color: white
+                    padding-top: 60px
+                    .text__content
+                        position: relative
+                        width: 100%
+                        max-width: 1400px
+                        margin: auto
+                        padding-left: 10%
+                        @media #{$mdl}
+                            padding-left: 13%
+                        @media #{$lg}
+                            padding-left: 6%
+                        img
+                            width: 100%
+                            max-width: 500px
+                            padding: 20px 0
+                        p
+                            color: $secondary
+                            max-width: 600px
+                            
+                            strong
+                                padding-left: 3px
+                                color: $strong
+                                font-weight: 500
+        .mish
+            position: relative
+            width: 100%
+            height: 83vh
+            overflow: hidden
+            z-index: 3
+            margin-top: 5vh
+            .mish__content
+                position: relative
+                width: 100%
+                display: flex
+                justify-content: center
+                flex-direction: column
+                video
+                    width: 100%
+                    height: 100vh
+                    object-fit: cover
+                    border: 3px solid #333
+                    margin-top: -100px
+                    @media #{$mdl}
+                        height: 100vh
+                        margin-top: -100px
+                    @media #{$md}
+                        height: 100vh
+                        margin-top: -100px
+                .playstop
+                    position: absolute
+                    width: 100%
+                    height: auto
+                    bottom: 6vh
+                    padding: 30px
+                    z-index: 11
+                    .circle
+                        position: relative
+                        width: 45px
+                        height: 45px
+                        border-radius: 50%
+                        border: 2px solid white
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        cursor: pointer
+                        overflow: hidden
+                        margin-top: -15px
+                        svg
+                            font-size: 20px
+                            color: white
+                            padding: 20px
+                .bg-2
+                    position: absolute
+                    width: 100%
+                    height: 100vh
+                    top: 0px
+                    left: 0
+                    background: #000000
+                    opacity: .4
+                .text
+                    position: absolute
+                    width: 100%
+                    height: 100vh
+                    display: flex
+                    align-items: center
+                    color: white
+                    .text__content
+                        width: 100%
+                        max-width: 1400px
+                        margin: auto
+                        text-align: right
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-end
+                        padding-right: 10%
+                        @media #{$mdl}
+                            padding-right: 13%
+                        @media #{$lg}
+                            padding-right: 6%
+                        h1
+                            color: #fff
+                        p
+                            color: $secondary
+                            max-width: 600px
+                            text-align: right
+                            strong
+                                padding-right: 3px
+                                color: $strong
+                                font-weight: 500                   
+                        
+.play
+    display: block
+
+.play-none
+    display: none
+
+.stop
+    disstop: block
+
+.play-none
+    display: none
+                        
+        

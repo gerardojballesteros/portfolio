@@ -1,4 +1,4 @@
-import LazyLoad from "react-lazyload";
+
 
 export const Footer = () => {
     const year = new Date();

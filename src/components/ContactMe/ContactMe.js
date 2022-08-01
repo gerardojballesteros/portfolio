@@ -2,7 +2,7 @@
 export const ContactMe = () => {
   return (
     <>
-        <div className="contact-me">
+        <section className="contact-me">
             <div className="contact-me__content">
                 <div className="title">
                     <h1>Contact me</h1>
@@ -20,7 +20,7 @@ export const ContactMe = () => {
                     </a>
                 </picture>
             </div>
-        </div>
+        </section>
     </>
   )
 }

@@ -70,7 +70,7 @@ export const Projects = () => {
 
 
   return (
-    <div className="projects">
+    <section className="projects">
         <div className="projects__content">
             <div className="projects__content__title">
                 <h1>Some of the projects</h1>
@@ -136,6 +136,6 @@ export const Projects = () => {
             <Lippi />
             <ProjectsLippi />
         </div>
-    </div>
+    </section>
   )
 }

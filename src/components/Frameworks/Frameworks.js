@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import LazyLoad from 'react-lazyload';
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -80,19 +81,21 @@ export const Frameworks = () => {
 
 
     return (
-        <section className="fw framework-parents" ref={FrameworksAll}>
-            <div className="fw__content">
-                <article className="title" ref={TitleReact}>
-                    <h1>The framework <br /> I use the most.</h1>
-                </article>
-                <picture className="img-react" ref={ImgReact}>
-                    <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650153766/portfolio/icons/react-img_1.svg" alt="" />
-                </picture>
-                <article className="subtitle">
-                    <p> React | A JavaScript library for building user interfaces <a href="">more info</a></p>
-                </article>
-            </div>
-        </section>
+       
+            <section className="fw framework-parents" ref={FrameworksAll}>
+                <div className="fw__content">
+                    <article className="title" ref={TitleReact}>
+                        <h1>The framework <br /> I use the most.</h1>
+                    </article>
+                    <picture className="img-react" ref={ImgReact}>
+                        <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650153766/portfolio/icons/react-img_1.svg" alt="" />
+                    </picture>
+                    <article className="subtitle">
+                        <p> React JS | A JavaScript library for building user interfaces <a href="https://es.reactjs.org/" target="_blank">more info</a></p>
+                    </article>
+                </div>
+            </section>
+      
     )
 }
 

@@ -16,13 +16,26 @@ export const ProjectsLippi = () => {
                         start: 'top 600px',
                         end: '+=50%',
                         scrub: 1,
-                        markers: true,
                         toggleActions: "play reverse play reset",
                     }
                   })
                   boxTitleOpacity.to('.projects__lippi .projects__lippi__content', {duration: 1, opacity: 1})
 
             }})
+            ScrollTrigger.matchMedia({
+                "(max-width: 735px)": function(){
+                    let boxTitleOpacity = gsap.timeline( {
+                        scrollTrigger:{
+                            trigger: '.projects__lippi',
+                            start: 'top 600px',
+                            end: '+=50%',
+                            scrub: 1,
+                            
+                        }
+                      })
+                      boxTitleOpacity.to('.projects__lippi .projects__lippi__content', {duration: 1, opacity: 1})
+    
+                }})
 
     }, [])
 
@@ -32,6 +45,7 @@ export const ProjectsLippi = () => {
         <div className="projects__lippi">
             <div className="projects__lippi__content">
                 <div className="projects__sub-title">
+                    <h1 className='title-lippi-mobile'>Lippi Outdoor</h1>
                     <p>I hope you like these magnificent websites that I made for <strong>the outdoor giant</strong> in Chile.</p>
                     <div className="img-projects">
                         <img src="https://res.cloudinary.com/lippi-outdoor/image/upload/v1657309586/banner-lippi/montana-negro_jrh9hm.png" alt="" />

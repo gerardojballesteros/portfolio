@@ -4,6 +4,8 @@
     position: relative
     width: 100%
     height: auto
+    @media #{$sm}
+        display: none
     .lippi__content
         .box__text
             position: relative
@@ -36,6 +38,8 @@
                     text-align: center
                     line-height: 7vw
                     margin: auto
+                    @media #{$sm}
+                        line-height: 50px
         .box__projects
             position: absolute
             width: 100%
@@ -59,6 +63,10 @@
                     position: relative
                     top: 64px
                     line-height: 7vw
+                    @media #{$sm}
+                        top: 34px
+                        line-height: 50px
+                    
                 #t2
                     position: relative
                     top: -134px
@@ -100,12 +108,18 @@
     height: 1200px
     background: #fff 
     margin-top: -44vh
+    @media #{$sm}
+        margin-top: 0
+        height: auto
+        padding-top: 100px
     .projects__lippi__content
         width: 100%
         display: flex
         flex-direction: column
         align-items: center
         opacity: 0
+        @media #{$sm}
+            opacity: 1
         .img-projects
             width: 100%
             display: flex
@@ -114,6 +128,15 @@
             img
                 width: 100%
                 max-width: 130px
+                
+        .projects__sub-title
+            width: 100%
+            padding: 0 20px
+            text-align: center
+            .title-lippi-mobile
+                display: none
+                @media #{$sm}
+                    display: block
     .box__items
         position: relative
         width: 100%
@@ -125,6 +148,8 @@
         margin: auto
         padding: 0 5%
         margin-top: 70px
+        @media #{$sm}
+            display: block
         .box
             width: 100%
             height: 400px
@@ -137,6 +162,8 @@
             flex-direction: column
             justify-content: center
             align-items: center
+            @media #{$sm}
+                margin: 20px 0
             .image
                 height: 170px
                 display: flex
@@ -144,6 +171,8 @@
                 img
                     width: 100%
                     max-width: 300px
+                    @media #{$sm}
+                        max-width: 230px
             &:nth-child(1)
                 grid-column: 1/1
                 grid-row: 1

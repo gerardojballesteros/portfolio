@@ -48,6 +48,31 @@ export const Lippi = () => {
 
             }})
 
+            ScrollTrigger.matchMedia({
+                "(max-width: 735px)": function(){
+                    let boxTitleOpacity = gsap.timeline()
+                     
+    
+                    let boxTitle = gsap.timeline()
+                        
+    
+                        let boxText = gsap.timeline( {
+                            scrollTrigger:{
+                                trigger: '.box__projects',
+                                start: 'center center',
+                                end: '+=160%',
+                                scrub: true,
+                            }
+                          })
+                        boxText.to('#t1', {duration: 1, opacity: 1})
+                        boxText.to('#t1', {duration: 1, opacity: 1})
+                        boxText.to('#t1', {duration: 1, opacity: 0})
+                        boxText.to('#t2', {duration: 1, opacity: 1})
+                        boxText.to('body', {duration: 1, background: '#fff'})
+                           
+    
+                }})
+
     }, [])
     
 

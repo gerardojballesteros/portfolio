@@ -8,6 +8,8 @@
     margin-top: -80px
     @media #{$md}
         margin-top: -150px
+    @media #{$sm}
+        margin-top: 0px
     .projects__content
         .projects__content__title
             position: relative
@@ -29,6 +31,8 @@
                 line-height: 70px
                 @media #{$md}
                     line-height: 55px
+                @media #{$sm}
+                    line-height: 40px
                 &:nth-child(2)
                     margin-top: -10px 
                     background: linear-gradient(90deg, #FD89FF 0%, #FFFFFF 40%)
@@ -44,6 +48,8 @@
             height: auto
             margin-top: 140px
             z-index: 2
+            @media #{$sm}
+                margin-top: 50px
             .marsmellow__content
                 position: relative
                 width: 100%
@@ -51,6 +57,9 @@
                 display: flex
                 justify-content: center
                 flex-direction: column
+                @media #{$sm}
+                    height: 700px
+                    width: 100%
                 video
                     width: 70%
                     height: 75vh
@@ -59,8 +68,12 @@
                     margin: auto
                     @media #{$mdl}
                         height: 85vh
+                    @media #{$sm}
+                        border: 0px
+                        height: 700px
+                        width: 100%
                 .playstop
-                    position: abosulte
+                    position: absolute
                     width: 100%
                     height: auto
                     bottom: 0
@@ -96,12 +109,18 @@
                     align-items: center
                     color: white
                     padding-top: 60px
+                    @media #{$sm}
+                        height: 700px
+                        padding-top: 0px
                     .text__content
                         position: relative
                         width: 100%
                         max-width: 1400px
                         margin: auto
                         padding-left: 10%
+                        @media #{$sm}
+                            padding-left: 0px
+                            padding: 0 20px
                         @media #{$mdl}
                             padding-left: 13%
                         @media #{$lg}
@@ -118,6 +137,9 @@
                                 padding-left: 3px
                                 color: $strong
                                 font-weight: 500
+                        .btn-white
+                            @media #{$sm}
+                                margin-top: 30px 
         .mish
             position: relative
             width: 100%
@@ -125,6 +147,8 @@
             overflow: hidden
             z-index: 3
             margin-top: 5vh
+            @media #{$sm}
+                height: 700px
             .mish__content
                 position: relative
                 width: 100%
@@ -137,6 +161,8 @@
                     object-fit: cover
                     border: 3px solid #333
                     margin-top: -100px
+                    @media #{$sm}
+                        border: 0px
                     @media #{$mdl}
                         height: 100vh
                         margin-top: -100px
@@ -190,6 +216,8 @@
                         flex-direction: column
                         align-items: flex-end
                         padding-right: 10%
+                        @media #{$sm}
+                            padding: 0 20px
                         @media #{$mdl}
                             padding-right: 13%
                         @media #{$lg}
@@ -203,7 +231,10 @@
                             strong
                                 padding-right: 3px
                                 color: $strong
-                                font-weight: 500                   
+                                font-weight: 500  
+                        .btn-white
+                            @media #{$sm}
+                                margin-top: 30px             
                         
 .play
     display: block

@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import LazyLoad from 'react-lazyload';
 gsap.registerPlugin(ScrollTrigger);
 
 export const Skills = () => {
@@ -265,129 +266,134 @@ export const Skills = () => {
 
     return (
         <>
-            <section className="skills framework-parents">
-                <picture className="keyboard" ref={skillsKeyboard}>
-                    <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650005941/portfolio/icons/keyboard.svg" alt="keyboard" />
-                </picture>
-                <article className="title" ref={skillsTitleTop}>
-                    <h1><strong id="my">My</strong> <strong id="dev">development</strong> <br /> <strong id="board">board</strong>
-                        <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650075458/portfolio/icons/keyboard_mobile.svg" alt="" />
-                    </h1>
-                </article>
-                <div className="row">
-                    <div className="bg-gray"></div>
-                    <div className="skills__items">
-                        <div className="items">
-                            <ul ref={skillsOne}>
-                                <div className="text-subtitle" >
-                                    <p>More than 3 years as a</p>
-                                </div>
-                                <div className="text-title" >
-                                    <h2>
-                                    Front-end <br /> Software Engineer.
-                                    </h2>
-                                </div>
-                                <div className="text-description">
-                                    <p>Courses taken at</p>
-                                    <picture>
-                                        <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650014023/portfolio/icons/Udemy_New_2021.svg" alt="udemy" />                     
-                                        <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650013580/portfolio/icons/Platzi.svg" alt="platzi" />
-                                        <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650014135/portfolio/icons/Harvard_University.svg" alt="harvard" />
-                                    </picture>
-                                </div>
-                            </ul>
-                        </div>
-                        <div className="items">
-                            <ul ref={skillsTwo}>
-                                <div className="text-title">
-                                    <h2>UI/UX 
-                                    design 
-                                    experience</h2>
-                                </div>
-                                <div className="text-description">
-                                    <p>Programs I use to design</p>
-                                    <picture>
-                                        <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650012815/portfolio/icons/figma-seeklogo.com.svg" alt="figma"/>
-                                    </picture>
-                                </div>
-                            </ul>
-                        </div>
-                        <div className="items">
-                            <ul ref={skillsThree}>
-                                <div className="text-subtitle">
-                                    <p>Language</p>
-                                </div>
-                                <div className="text-title">
-                                    <h2>
-                                    &#60;HTML <br />
-                                    SEMANTIC/&#62;
-                                    </h2>
-                                </div>
-                                <div className="text-rating" >
-                                    <p>Advance level</p>
-                                </div>
-                            </ul>
-                        </div>
-                        <div className="items">
-                        <ul ref={skillsFour}>
-                                <div className="text-subtitle">
-                                    <p>Language</p>
-                                </div>
-                                <div className="text-title">
-                                    <h2>
-                                        CSS <strong>love</strong> <br />
-                                        at first sight
-                                    </h2>
-                                </div>
-                                <div className="text-description">
-                                    <p>CSS in JS with <strong>Styled-Components</strong> or Preprocessor</p>
-                                    <picture>
-                                        <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650078965/portfolio/icons/sasslogo.svg" alt="sass"/>
-                                    </picture>
-                                </div>
-                                <div className="text-rating" >
-                                    <p>Advance level</p>
-                                </div>
-                            </ul>
-                        </div>
-                        <div className="items">
-                        <ul ref={skillsFive}>
-                                <div className="text-subtitle">
-                                    <p>Language</p>
-                                </div>
-                                <div className="text-title">
-                                    <h2>
-                                        Javascript();
-                                        <p>with <strong>TypeScript</strong></p>
-                                    </h2>
-                                </div>
-                        
-                                <div className="text-rating" >
-                                    <p>Intermediate level</p>
-                                </div>
-                            </ul>
+           
+           
+                <section className="skills framework-parents">
+                    <picture className="keyboard" ref={skillsKeyboard}>
+                        <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650005941/portfolio/icons/keyboard.svg" alt="keyboard" />
+                    </picture>
+                    <article className="title" ref={skillsTitleTop}>
+                        <h1><strong id="my">My</strong> <strong id="dev">development</strong> <br /> <strong id="board">board</strong>
+                            <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650075458/portfolio/icons/keyboard_mobile.svg" alt="" />
+                        </h1>
+                    </article>
+                    <div className="row">
+                        <div className="bg-gray"></div>
+                        <div className="skills__items">
+                            <div className="items">
+                                <ul ref={skillsOne}>
+                                    <div className="text-subtitle" >
+                                        <p>More than 3 years as a</p>
+                                    </div>
+                                    <div className="text-title" >
+                                        <h2>
+                                        Front-end <br /> Software Engineer.
+                                        </h2>
+                                    </div>
+                                    <div className="text-description">
+                                        <p>Courses taken at</p>
+                                        <picture>
+                                            <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650014023/portfolio/icons/Udemy_New_2021.svg" alt="udemy" />                     
+                                            <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650013580/portfolio/icons/Platzi.svg" alt="platzi" />
+                                            <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650014135/portfolio/icons/Harvard_University.svg" alt="harvard" />
+                                        </picture>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div className="items">
+                                <ul ref={skillsTwo}>
+                                    <div className="text-title">
+                                        <h2>UI/UX 
+                                        design 
+                                        experience</h2>
+                                    </div>
+                                    <div className="text-description">
+                                        <p>Programs I use to design</p>
+                                        <picture>
+                                            <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650012815/portfolio/icons/figma-seeklogo.com.svg" alt="figma"/>
+                                        </picture>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div className="items">
+                                <ul ref={skillsThree}>
+                                    <div className="text-subtitle">
+                                        <p>Language</p>
+                                    </div>
+                                    <div className="text-title">
+                                        <h2>
+                                        &#60;HTML <br />
+                                        SEMANTIC/&#62;
+                                        </h2>
+                                    </div>
+                                    <div className="text-rating" >
+                                        <p>Advance level</p>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div className="items">
+                            <ul ref={skillsFour}>
+                                    <div className="text-subtitle">
+                                        <p>Language</p>
+                                    </div>
+                                    <div className="text-title">
+                                        <h2>
+                                            CSS <strong>love</strong> <br />
+                                            at first sight
+                                        </h2>
+                                    </div>
+                                    <div className="text-description">
+                                        <p>CSS in JS with <strong>Styled-Components</strong> or Preprocessor</p>
+                                        <picture>
+                                            <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650078965/portfolio/icons/sasslogo.svg" alt="sass"/>
+                                        </picture>
+                                    </div>
+                                    <div className="text-rating" >
+                                        <p>Advance level</p>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div className="items">
+                            <ul ref={skillsFive}>
+                                    <div className="text-subtitle">
+                                        <p>Language</p>
+                                    </div>
+                                    <div className="text-title">
+                                        <h2>
+                                            Javascript();
+                                            <p>with <strong>TypeScript</strong></p>
+                                        </h2>
+                                    </div>
+
+                                    <div className="text-rating" >
+                                        <p>Intermediate level</p>
+                                    </div>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section className="javascript" ref={javascript}>
-                <div className="javascript__content">
-                    <article className="title" ref={javascriptTitle}>
-                        <h1>My favorite programming <br /> language</h1>
-                    </article>
-                    <article className="text-left-right">
-                        <h1 class="txt-left">console.log(‘hello world’);</h1>
-                        <h1 class="txt-right">Simply a beautiful and powerful language</h1>
-                    </article>
-                    <picture className="keyboard-js" ref={jsKb}>
-                        <p id="guess">Guess which one?</p>
-                        <img src="https://www.apple.com/v/imac-24/e/images/overview/accessories_keyboard__e1n39q3h7ngy_large_2x.png" alt="" />
-                    </picture>
-                    <article className="text-js">
-                        <h1>JavaScript(); <br /> <p>with <strong>TypeScript</strong></p> </h1>
-                    </article>
-                </div>
-            </section>
+                </section>
+          
+                <section className="javascript" ref={javascript}>
+                    <div className="javascript__content">
+                        <article className="title" ref={javascriptTitle}>
+                            <h1>My favorite programming <br /> language</h1>
+                        </article>
+                        <article className="text-left-right">
+                            <h1 class="txt-left">console.log(‘hello world’);</h1>
+                            <h1 class="txt-right">Simply a beautiful and powerful language</h1>
+                        </article>
+                        <picture className="keyboard-js" ref={jsKb}>
+                            <p id="guess">Guess which one?</p>
+                            <img src="https://www.apple.com/v/imac-24/e/images/overview/accessories_keyboard__e1n39q3h7ngy_large_2x.png" alt="" />
+                        </picture>
+                        <article className="text-js">
+                            <h1>JavaScript(); <br /> <p>with <strong>TypeScript</strong></p> </h1>
+                        </article>
+                    </div>
+                </section>
+       
+       
         </>
     )
 }

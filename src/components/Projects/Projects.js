@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
-import mars from '../../assets/video-marte-perseverance.mp4'
+import mars from '../../assets/mars.mp4'
 import thor from '../../assets/thor.mp4'
+import marsmellow from '../../assets/logo-marsmellow.svg'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef } from "react";
@@ -95,7 +96,7 @@ export const Projects = () => {
                 <div className="bg"></div>
                 <div className="text">
                   <div className="text__content">
-                    <img src="https://res.cloudinary.com/underverse-clothing/image/upload/dpr_2.0,q_auto:best/v1651965315/Marsmellow/logo/logo-marsmellow-text-white.png" alt="" />
+                    <img src={marsmellow} alt="" />
                     <h3>Mars as <strong>never seen before.</strong></h3>
                     <p>Through the Marsmellow app you will be able to see the latest images photographed on 
                       mars by the spirit, opportunity, curiosity and perseverance rovers. 

@@ -1,7 +1,9 @@
-import React, {useEffect} from 'react'
+import {useEffect} from 'react'
+import profile from '../../assets/yo-2.png'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
+
 
 export const Banner = () => {
     useEffect(() => {
@@ -28,20 +30,20 @@ export const Banner = () => {
                 <picture id="img-profile">
                     <source 
                     media="(min-width: 734px)" 
-                    srcSet="https://res.cloudinary.com/underverse-clothing/image/upload/dpr_2.0,f_auto,q_auto/v1649545872/portfolio/yo_drz6mm.png"
+                    srcSet={profile}
                     />
                     <source 
                     media="(min-width: 1068px)" 
-                    srcSet="https://res.cloudinary.com/underverse-clothing/image/upload/dpr_2.0,f_auto,q_auto/v1649545872/portfolio/yo_drz6mm.png"
+                    srcSet={profile}
                     />
                     <source 
                     media="(min-width: 1440px)" 
-                    srcSet="https://res.cloudinary.com/underverse-clothing/image/upload/dpr_2.0,f_auto,q_auto/v1649545872/portfolio/yo_drz6mm.png"
+                    srcSet={profile}
                     />
                     <source 
                     media="(min-width: 0px)"
-                    srcSet="https://res.cloudinary.com/underverse-clothing/image/upload/dpr_2.0,f_auto,q_auto/v1649545872/portfolio/yo_drz6mm.png"/>
-                    <img src="https://res.cloudinary.com/underverse-clothing/image/upload/dpr_2.0,f_auto,q_auto/v1649545872/portfolio/yo_drz6mm.png" alt="" />
+                    srcSet={profile}/>
+                    <img src={profile} alt="" />
                 </picture>
                 <article className="txt">
                     {/* <h3>Welcome to my</h3> */}

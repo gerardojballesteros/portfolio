@@ -1,7 +1,14 @@
 import { useRef, useEffect } from 'react'
+import udemy from '../../assets/udemy.svg'
+import platzi from '../../assets/platzi.svg'
+import harvard from '../../assets/harvard.svg'
+import keyboard from '../../assets/keyboard.svg'
+import figma from '../../assets/figma.svg'
+import sass from '../../assets/sass.svg'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
+
 
 export const Skills = () => {
 
@@ -269,11 +276,11 @@ export const Skills = () => {
            
                 <section className="skills framework-parents">
                     <picture className="keyboard" ref={skillsKeyboard}>
-                        <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650005941/portfolio/icons/keyboard.svg" alt="keyboard" />
+                        <img src={keyboard} alt="keyboard" />
                     </picture>
                     <article className="title" ref={skillsTitleTop}>
                         <h1><strong id="my">My</strong> <strong id="dev">development</strong> <br /> <strong id="board">board</strong>
-                            <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650075458/portfolio/icons/keyboard_mobile.svg" alt="" />
+                            <img src={keyboard} alt="" />
                         </h1>
                     </article>
                     <div className="row">
@@ -292,9 +299,9 @@ export const Skills = () => {
                                     <div className="text-description">
                                         <p>Courses taken at</p>
                                         <picture>
-                                            <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650014023/portfolio/icons/Udemy_New_2021.svg" alt="udemy" />                     
-                                            <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650013580/portfolio/icons/Platzi.svg" alt="platzi" />
-                                            <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650014135/portfolio/icons/Harvard_University.svg" alt="harvard" />
+                                            <img src={udemy} alt="udemy" />                     
+                                            <img src={platzi} alt="platzi" />
+                                            <img src={harvard} alt="harvard" />
                                         </picture>
                                     </div>
                                 </ul>
@@ -309,7 +316,7 @@ export const Skills = () => {
                                     <div className="text-description">
                                         <p>Programs I use to design</p>
                                         <picture>
-                                            <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650012815/portfolio/icons/figma-seeklogo.com.svg" alt="figma"/>
+                                            <img src={figma} alt="figma"/>
                                         </picture>
                                     </div>
                                 </ul>
@@ -344,7 +351,7 @@ export const Skills = () => {
                                     <div className="text-description">
                                         <p>CSS in JS with <strong>Styled-Components</strong> or Preprocessor</p>
                                         <picture>
-                                            <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650078965/portfolio/icons/sasslogo.svg" alt="sass"/>
+                                            <img src={sass} alt="sass"/>
                                         </picture>
                                     </div>
                                     <div className="text-rating" >

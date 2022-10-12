@@ -1,17 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.bacddcdf.css",
-    "main.js": "/static/js/main.8550f279.js",
+    "main.css": "/static/css/main.0fe7fc0f.css",
+    "main.js": "/static/js/main.b06a2360.js",
+    "static/media/video-marte-perseverance.mp4": "/static/media/video-marte-perseverance.4187090c39ce0f2d3a65.mp4",
+    "static/media/thor.mp4": "/static/media/thor.820d0eaa84bf02a200ba.mp4",
+    "static/media/yo-2.png": "/static/media/yo-2.fb3b7981fa83c1ab489e.png",
+    "static/media/harvard.svg": "/static/media/harvard.9be329a1311f8e4a88f6c2b2bf5d012b.svg",
     "static/media/cocogoose-light.ttf": "/static/media/cocogoose-light.6440e32616f290a797e9.ttf",
     "static/media/cocogoose-bold.ttf": "/static/media/cocogoose-bold.fc4c5187ea318bde306b.ttf",
+    "static/media/react.png": "/static/media/react.0e895e82c804950f9e47.png",
     "static/media/cocogoose-regular.ttf": "/static/media/cocogoose-regular.f77876cfc3790e5308f4.ttf",
     "static/media/cocogoose-trial.otf": "/static/media/cocogoose-trial.36e499573a696e95c489.otf",
+    "static/media/platzi.svg": "/static/media/platzi.d34e58057b70710e2f90f794b13ae0cb.svg",
+    "static/media/keyboard.svg": "/static/media/keyboard.45cee87538bd96d0677f29e6d3d1fc37.svg",
+    "static/media/udemy.svg": "/static/media/udemy.e998a9d417b9b7bebc429feb38e5e9ca.svg",
+    "static/media/sass.svg": "/static/media/sass.14e1053539d92b3ecbd2fac45420a4ef.svg",
+    "static/media/figma.svg": "/static/media/figma.6e3c782b5b73db110ce7e36664ec13f3.svg",
     "index.html": "/index.html",
-    "main.bacddcdf.css.map": "/static/css/main.bacddcdf.css.map",
-    "main.8550f279.js.map": "/static/js/main.8550f279.js.map"
+    "main.0fe7fc0f.css.map": "/static/css/main.0fe7fc0f.css.map",
+    "main.b06a2360.js.map": "/static/js/main.b06a2360.js.map"
   },
   "entrypoints": [
-    "static/css/main.bacddcdf.css",
-    "static/js/main.8550f279.js"
+    "static/css/main.0fe7fc0f.css",
+    "static/js/main.b06a2360.js"
   ]
 }

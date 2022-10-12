@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import mars from '../../assets/video-marte-perseverance.mp4'
+import thor from '../../assets/thor.mp4'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef } from "react";
@@ -79,7 +81,7 @@ export const Projects = () => {
             <div className="marsmellow">
               <div className="marsmellow__content">
                 <video id="video" ref={isPlayingMars ? PlayVideoMars : PauseVideoMars} autoPlay={true} muted loop playsInline >
-                  <source  src="https://res.cloudinary.com/underverse-clothing/video/upload/v1658738256/cortado2.mp4" type="video/mp4"/>
+                  <source  src={mars} type="video/mp4"/>
                 </video>
                 <div className="playstop">
                   <div className="circle" >
@@ -109,7 +111,7 @@ export const Projects = () => {
             <div className="mish">
               <div className="mish__content">
                 <video id="video" ref={isPlayingMish ? PlayVideoMish : PauseVideoMish} autoPlay={true} muted loop playsInline >
-                  <source  src="https://res.cloudinary.com/underverse-clothing/video/upload/v1658754173/thor.mp4" type="video/mp4"/>
+                  <source  src={thor} type="video/mp4"/>
                 </video>
                 <div className="playstop">
                   <div className="circle" >
@@ -127,7 +129,7 @@ export const Projects = () => {
                     <h3>App designed for <strong>movie lovers.</strong></h3>
                     <p>Through Mish. you will be able to see all the movies that are currently playing and not only that, you will also find out about new releases coming soon. </p>
                        <div className="btn-white">
-                        <a href="https://www.mish-app.netlify.app" target="_blank">Go to Mish</a>
+                        <a href="https://mish-app.netlify.app" target="_blank">Go to Mish</a>
                        </div>
                   </div>
                 </div>

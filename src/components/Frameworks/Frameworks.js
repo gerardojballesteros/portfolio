@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react'
+import react from '../../assets/react.png'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -58,19 +59,6 @@ export const Frameworks = () => {
         },
         "(max-width: 734px)": function(){
 
-            // gsap.utils.toArray(".framework-parents").forEach((frameworkPanel, i) => {
-            //     ScrollTrigger.create({
-            //       trigger: frameworkPanel,
-            //       start: "350px top", 
-            //       scrub: true,
-            //       pin: true, 
-            //       pinSpacing: false,
-            //     });
-            //   }); 
-            //   ScrollTrigger.create({
-            //   snap: false
-            //   });
-
         },
 
     });
@@ -87,7 +75,7 @@ export const Frameworks = () => {
                         <h1>The framework <br /> I use the most.</h1>
                     </article>
                     <picture className="img-react" ref={ImgReact}>
-                        <img src="https://res.cloudinary.com/underverse-clothing/image/upload/v1650153766/portfolio/icons/react-img_1.svg" alt="" />
+                        <img src={react} alt="" />
                     </picture>
                     <article className="subtitle">
                         <p> React JS | A JavaScript library for building user interfaces <a href="https://es.reactjs.org/" target="_blank">more info</a></p>

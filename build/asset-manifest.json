@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.0fe7fc0f.css",
-    "main.js": "/static/js/main.b06a2360.js",
-    "static/media/video-marte-perseverance.mp4": "/static/media/video-marte-perseverance.4187090c39ce0f2d3a65.mp4",
+    "main.js": "/static/js/main.9108e3ae.js",
+    "static/media/mars.mp4": "/static/media/mars.c98622f27fa6146fe2ad.mp4",
     "static/media/thor.mp4": "/static/media/thor.820d0eaa84bf02a200ba.mp4",
     "static/media/yo-2.png": "/static/media/yo-2.fb3b7981fa83c1ab489e.png",
     "static/media/harvard.svg": "/static/media/harvard.9be329a1311f8e4a88f6c2b2bf5d012b.svg",
     "static/media/cocogoose-light.ttf": "/static/media/cocogoose-light.6440e32616f290a797e9.ttf",
     "static/media/cocogoose-bold.ttf": "/static/media/cocogoose-bold.fc4c5187ea318bde306b.ttf",
     "static/media/react.png": "/static/media/react.0e895e82c804950f9e47.png",
+    "static/media/logo-marsmellow.svg": "/static/media/logo-marsmellow.6ab2354468d59cb4d6aad30f118d03a0.svg",
     "static/media/cocogoose-regular.ttf": "/static/media/cocogoose-regular.f77876cfc3790e5308f4.ttf",
     "static/media/cocogoose-trial.otf": "/static/media/cocogoose-trial.36e499573a696e95c489.otf",
     "static/media/platzi.svg": "/static/media/platzi.d34e58057b70710e2f90f794b13ae0cb.svg",
@@ -18,10 +19,10 @@
     "static/media/figma.svg": "/static/media/figma.6e3c782b5b73db110ce7e36664ec13f3.svg",
     "index.html": "/index.html",
     "main.0fe7fc0f.css.map": "/static/css/main.0fe7fc0f.css.map",
-    "main.b06a2360.js.map": "/static/js/main.b06a2360.js.map"
+    "main.9108e3ae.js.map": "/static/js/main.9108e3ae.js.map"
   },
   "entrypoints": [
     "static/css/main.0fe7fc0f.css",
-    "static/js/main.b06a2360.js"
+    "static/js/main.9108e3ae.js"
   ]
 }
